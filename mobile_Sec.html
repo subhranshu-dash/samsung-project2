@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Samsung Mobiles</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script> -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <style>
+    * {
+      scroll-behavior: smooth;
+    }
+    .animate-fade-in-up {
+      animation: fadeInUp 0.6s ease-out both;
+    }
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  </style>
+</head>
+<body class="bg-gradient-to-b from-white to-gray-100 text-gray-800">
+
+<!-- Header -->
+<!-- Header -->
+<header class="sticky top-0 z-50 bg-white border-b border-gray-200 shadow-md">
+  <div class="max-w-screen-xl mx-auto flex flex-wrap items-center justify-between px-4 py-4">
+
+    <!-- Samsung Logo -->
+    <a href="index.html" class="flex-shrink-0">
+      <img src="https://www.samsung.com/in/web/dist/img/gnb-mobile-240x64.103c8c2.png" alt="Samsung Logo" class="h-6 md:h-8">
+    </a>
+
+    <!-- Search, Sort & Cart Icon -->
+    <div class="flex flex-col sm:flex-row items-center gap-2 sm:gap-4 mt-4 sm:mt-0">
+
+      <!-- Search -->
+      <input type="text" id="searchInput" placeholder="🔍 Search here..." class="px-3 py-2 border border-gray-300 rounded-lg text-sm w-full sm:w-60">
+
+      <!-- Sort Dropdown -->
+      <select id="sortSelect" class="border border-gray-300 px-3 py-2 rounded-lg text-sm w-full sm:w-44">
+        <option value="">Sort by Price</option>
+        <option value="low">Low to High</option>
+        <option value="high">High to Low</option>
+      </select>
+
+      <!-- Cart Icon next to Sort -->
+ <a href="cart.html" class="relative" id="cartIconLink">
+  <i class="fas fa-shopping-cart text-2xl text-gray-800"></i>
+  <span id="cartCount" class="absolute -top-2 -right-2 bg-red-600 text-white text-xs w-5 h-5 rounded-full flex items-center justify-center hidden">0</span>
+</a>
+    </div>
+
+  </div>
+</header>
+
+
+
+<!-- Main Product Section -->
+<main class="max-w-7xl mx-auto px-4 py-8 grid gap-8 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
+  <!-- Each product card -->
+  <div class="refrigerator-card bg-white rounded-xl shadow-md overflow-hidden animate-fade-in-up">
+  <img src="images/s25 edgen.webp" alt="Samsung s25 edge" class="w-full h-48 object-cover">
+  <div class="p-4">
+    <h3 class="refrigerator-name text-lg font-semibold">Samsung S25 Edge</h3>
+    <p class="text-sm">⭐ 4.8 (320 reviews)</p>
+    <p class="text-xs text-gray-600">Color: Arctic Silver</p>
+    <p class="text-xs">12GB RAM | 512GB ROM</p>
+    <div class="flex items-center space-x-2 text-sm font-medium mt-2">
+      <span class="refrigerator-new text-blue-600">₹100,999</span>
+      <span class="line-through text-gray-500">₹129,999</span>
+    </div>
+    <div class="mt-4 flex space-x-2">
+      <button class="refrigerator-cart bg-black text-white px-4 py-1.5 rounded hover:bg-gray-800">🛒 Add</button>
+      <button class="border px-4 py-1.5 rounded hover:bg-gray-100"><a href="s25ultra_learmore.html">Learn more</a></button>
+    </div>
+  </div>
+</div>
+
+
+  <!-- S25 Ultra -->
+  <div class="refrigerator-card bg-white rounded-xl shadow-md overflow-hidden animate-fade-in-up">
+  <img src="images/s25 ultran.jpg" alt="Samsung s25 edge" class="w-full h-48 object-cover">
+  <div class="p-4">
+    <h3 class="refrigerator-name text-lg font-semibold">Samsung S25 Ultra</h3>
+    <p class="text-sm">⭐ 4.8 (320 reviews)</p>
+    <p class="text-xs text-gray-600">Color: Arctic Silver</p>
+    <p class="text-xs">12GB RAM | 512GB ROM</p>
+    <div class="flex items-center space-x-2 text-sm font-medium mt-2">
+      <span class="refrigerator-new text-blue-600">₹100,999</span>
+      <span class="line-through text-gray-500">₹129,999</span>
+    </div>
+    <div class="mt-4 flex space-x-2">
+      <button class="refrigerator-cart bg-black text-white px-4 py-1.5 rounded hover:bg-gray-800">🛒 Add</button>
+      <button class="border px-4 py-1.5 rounded hover:bg-gray-100">Learn more</button>
+    </div>
+  </div>
+</div>
+
+<!-- Samsung s25 pluse -->
+   <div class="refrigerator-card bg-white rounded-xl shadow-md overflow-hidden animate-fade-in-up">
+  <img src="images/s25 pluse.jpg" alt="Samsung s25 edge" class="w-full h-48 object-cover">
+  <div class="p-4">
+    <h3 class="refrigerator-name text-lg font-semibold">Samsung s2 pluse </h3>
+    <p class="text-sm">⭐ 4.8 (320 reviews)</p>
+    <p class="text-xs text-gray-600">Color: Arctic Silver</p>
+    <p class="text-xs">12GB RAM | 512GB ROM</p>
+    <div class="flex items-center space-x-2 text-sm font-medium mt-2">
+      <span class="refrigerator-new text-blue-600">₹100,999</span>
+      <span class="line-through text-gray-500">₹129,999</span>
+    </div>
+    <div class="mt-4 flex space-x-2">
+      <button class="refrigerator-cart bg-black text-white px-4 py-1.5 rounded hover:bg-gray-800">🛒 Add</button>
+      <button class="border px-4 py-1.5 rounded hover:bg-gray-100"><a href="s25edge.html">Learn more</a></button>
+    </div>
+  </div>
+</div>
+<!-- Samsung s25 -->
+    <div class="refrigerator-card bg-white rounded-xl shadow-md overflow-hidden animate-fade-in-up">
+  <img src="images/s25.jpg" alt="Samsung s25 edge" class="w-full h-48 object-cover">
+  <div class="p-4">
+    <h3 class="refrigerator-name text-lg font-semibold">Samsung s25 </h3>
+    <p class="text-sm">⭐ 4.8 (320 reviews)</p>
+    <p class="text-xs text-gray-600">Color: Arctic Silver</p>
+    <p class="text-xs">12GB RAM | 512GB ROM</p>
+    <div class="flex items-center space-x-2 text-sm font-medium mt-2">
+      <span class="refrigerator-new text-blue-600">₹100,999</span>
+      <span class="line-through text-gray-500">₹129,999</span>
+    </div>
+    <div class="mt-4 flex space-x-2">
+      <button class="refrigerator-cart bg-black text-white px-4 py-1.5 rounded hover:bg-gray-800">🛒 Add</button>
+      <button class="border px-4 py-1.5 rounded hover:bg-gray-100">Learn more</button>
+    </div>
+  </div>
+</div>
+<!-- Samsung s24 ultra -->
+    <div class="refrigerator-card bg-white rounded-xl shadow-md overflow-hidden animate-fade-in-up">
+  <img src="images/s24 ultra.jpg" alt="Samsung s25 edge" class="w-full h-48 object-cover">
+  <div class="p-4">
+    <h3 class="refrigerator-name text-lg font-semibold">Samsung s24 ultra </h3>
+    <p class="text-sm">⭐ 4.8 (320 reviews)</p>
+    <p class="text-xs text-gray-600">Color: Arctic Silver</p>
+    <p class="text-xs">12GB RAM | 512GB ROM</p>
+    <div class="flex items-center space-x-2 text-sm font-medium mt-2">
+      <span class="refrigerator-new text-blue-600">₹100,999</span>
+      <span class="line-through text-gray-500">₹129,999</span>
+    </div>
+    <div class="mt-4 flex space-x-2">
+      <button class="refrigerator-cart bg-black text-white px-4 py-1.5 rounded hover:bg-gray-800">🛒 Add</button>
+      <button class="border px-4 py-1.5 rounded hover:bg-gray-100">Learn more</button>
+    </div>
+  </div>
+</div>
+<!-- Samsung s24 -->
+    <div class="refrigerator-card bg-white rounded-xl shadow-md overflow-hidden animate-fade-in-up">
+  <img src="images/s24.jpg" alt="Samsung s25 edge" class="w-full h-48 object-cover">
+  <div class="p-4">
+    <h3 class="refrigerator-name text-lg font-semibold">Samsung s24</h3>
+    <p class="text-sm">⭐ 4.8 (320 reviews)</p>
+    <p class="text-xs text-gray-600">Color: Arctic Silver</p>
+    <p class="text-xs">12GB RAM | 512GB ROM</p>
+    <div class="flex items-center space-x-2 text-sm font-medium mt-2">
+      <span class="refrigerator-new text-blue-600">₹100,999</span>
+      <span class="line-through text-gray-500">₹129,999</span>
+    </div>
+    <div class="mt-4 flex space-x-2">
+      <button class="refrigerator-cart bg-black text-white px-4 py-1.5 rounded hover:bg-gray-800">🛒 Add</button>
+      <button class="border px-4 py-1.5 rounded hover:bg-gray-100">Learn more</button>
+    </div>
+  </div>
+</div>
+<!-- Samsung s24 pluse -->
+    <div class="refrigerator-card bg-white rounded-xl shadow-md overflow-hidden animate-fade-in-up">
+  <img src="images/s24 pluse.jpg" alt="Samsung s25 edge" class="w-full h-48 object-cover">
+  <div class="p-4">
+    <h3 class="refrigerator-name text-lg font-semibold">Samsung s24 pluse</h3>
+    <p class="text-sm">⭐ 4.8 (320 reviews)</p>
+    <p class="text-xs text-gray-600">Color: Arctic Silver</p>
+    <p class="text-xs">12GB RAM | 512GB ROM</p>
+    <div class="flex items-center space-x-2 text-sm font-medium mt-2">
+      <span class="refrigerator-new text-blue-600">₹100,999</span>
+      <span class="line-through text-gray-500">₹129,999</span>
+    </div>
+    <div class="mt-4 flex space-x-2">
+      <button class="refrigerator-cart bg-black text-white px-4 py-1.5 rounded hover:bg-gray-800">🛒 Add</button>
+      <button class="border px-4 py-1.5 rounded hover:bg-gray-100">Learn more</button>
+    </div>
+  </div>
+</div>
+<!-- Samsung Galaxy Z Flip4 -->
+   <div class="refrigerator-card bg-white rounded-xl shadow-md overflow-hidden animate-fade-in-up">
+  <img src="images/z flip 4.jpg" alt="Samsung s25 edge" class="w-full h-48 object-cover">
+  <div class="p-4">
+    <h3 class="refrigerator-name text-lg font-semibold">Samsung Galaxy Z Flip4</h3>
+    <p class="text-sm">⭐ 4.8 (320 reviews)</p>
+    <p class="text-xs text-gray-600">Color: Arctic Silver</p>
+    <p class="text-xs">12GB RAM | 512GB ROM</p>
+    <div class="flex items-center space-x-2 text-sm font-medium mt-2">
+      <span class="refrigerator-new text-blue-600">₹100,999</span>
+      <span class="line-through text-gray-500">₹129,999</span>
+    </div>
+    <div class="mt-4 flex space-x-2">
+      <button class="refrigerator-cart bg-black text-white px-4 py-1.5 rounded hover:bg-gray-800">🛒 Add</button>
+      <button class="border px-4 py-1.5 rounded hover:bg-gray-100">Learn more</button>
+    </div>
+  </div>
+</div>
+
+  <!-- Repeat this block for each product listed: s25 plus, s25, s24 ultra, s24, s24 plus, z flip 4 -->
+  <!-- For brevity, you can duplicate and modify the structure above with corresponding images/text -->
+</main>
+
+<!-- Footer -->
+<footer class="bg-white border-t mt-12 py-8 text-sm text-gray-600">
+  <div class="max-w-7xl mx-auto px-4 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-6">
+    <div>
+      <h4 class="font-semibold mb-2">Product & Service</h4>
+      <ul class="space-y-1 text-xs">
+        <li>Smartphones</li>
+        <li>Tablets</li>
+        <li>Audio Sound</li>
+        <li>Watches</li>
+        <li>Smart Switch</li>
+        <li>TVs</li>
+        <li>Monitors</li>
+        <li>Memory Storage</li>
+      </ul>
+    </div>
+    <div>
+      <h4 class="font-semibold mb-2">Shop</h4>
+      <ul class="space-y-1 text-xs">
+        <li>FAQs</li>
+        <li>Welcome Voucher</li>
+        <li>Store Locator</li>
+      </ul>
+    </div>
+    <div>
+      <h4 class="font-semibold mb-2">Support</h4>
+      <ul class="space-y-1 text-xs">
+        <li>Call Us</li>
+        <li>Track Repair</li>
+        <li>Service Centre</li>
+      </ul>
+    </div>
+    <div>
+      <h4 class="font-semibold mb-2">Account & Community</h4>
+      <ul class="space-y-1 text-xs">
+        <li>My Page</li>
+        <li>Orders</li>
+        <li>Wishlist</li>
+      </ul>
+    </div>
+    <div>
+      <h4 class="font-semibold mb-2">About Us</h4>
+      <ul class="space-y-1 text-xs">
+        <li>Company Info</li>
+        <li>Careers</li>
+        <li>Newsroom</li>
+      </ul>
+    </div>
+  </div>
+</footer>
+
+<script src="refrigerators.js"></script>
+</body>
+</html>
